@@ -14,6 +14,7 @@
 		122BEEA1227153FF0058E947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122BEEA0227153FF0058E947 /* Assets.xcassets */; };
 		122BEEA4227153FF0058E947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */; };
 		1BAB63ED2271755D00FE1898 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB63EC2271755D00FE1898 /* LoginViewController.swift */; };
+		FE2B276F2272C6A2005FDB37 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2B276E2272C6A2005FDB37 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		122BEEA3227153FF0058E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		122BEEA5227153FF0058E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAB63EC2271755D00FE1898 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FE2B276E2272C6A2005FDB37 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,12 @@
 				122BEE97227153FE0058E947 /* AppDelegate.swift */,
 				122BEE99227153FE0058E947 /* FirstViewController.swift */,
 				122BEE9B227153FE0058E947 /* SecondViewController.swift */,
-				122BEE9D227153FE0058E947 /* Main.storyboard */,
 				1BAB63EC2271755D00FE1898 /* LoginViewController.swift */,
+				122BEE9D227153FE0058E947 /* Main.storyboard */,
 				122BEEA0227153FF0058E947 /* Assets.xcassets */,
-				122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */,
 				122BEEA5227153FF0058E947 /* Info.plist */,
+				122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */,
+				FE2B276E2272C6A2005FDB37 /* GradientView.swift */,
 			);
 			path = physicsMiniGames;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				1BAB63ED2271755D00FE1898 /* LoginViewController.swift in Sources */,
 				122BEE9C227153FE0058E947 /* SecondViewController.swift in Sources */,
+				FE2B276F2272C6A2005FDB37 /* GradientView.swift in Sources */,
 				122BEE98227153FE0058E947 /* AppDelegate.swift in Sources */,
 				122BEE9A227153FE0058E947 /* FirstViewController.swift in Sources */,
 			);
@@ -294,7 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4XGH7Q8LMZ;
+				DEVELOPMENT_TEAM = 3GHLH52F3W;
 				INFOPLIST_FILE = physicsMiniGames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,7 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4XGH7Q8LMZ;
+				DEVELOPMENT_TEAM = 3GHLH52F3W;
 				INFOPLIST_FILE = physicsMiniGames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
