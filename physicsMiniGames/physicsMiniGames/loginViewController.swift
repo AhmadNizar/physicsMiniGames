@@ -22,7 +22,11 @@ class LoginViewController: UIViewController {
     var playerName: String = ""
     
     @IBAction func askName(_ sender: Any) {
-//        playerName = nameField.text
+        if (nameField.text == "") {
+            
+        } else {
+//            playerName = nameField.text
+        }
     }
     
 
