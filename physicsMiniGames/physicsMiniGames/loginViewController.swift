@@ -12,12 +12,10 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+
         // Do any additional setup after loading the view.
     }
-    
+
     @IBOutlet weak var nameField: UITextField!
     var playerName: String = ""
     
