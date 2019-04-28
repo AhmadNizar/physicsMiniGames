@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
@@ -20,10 +22,12 @@ class LoginViewController: UIViewController {
     var playerName: String = ""
     
     @IBAction func askName(_ sender: Any) {
-        if (nameField.text == "") {
-            
-        } else {
-//            playerName = nameField.text
+        print(nameField.text)
+        Alamofire.request("http://localhost:3000/users/").responseData { (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar = JSON(responseData.result.value!)
+                print(swiftyJsonVar)
+            }
         }
     }
     
