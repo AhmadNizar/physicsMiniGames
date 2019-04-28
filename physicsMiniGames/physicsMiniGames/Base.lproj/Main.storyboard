@@ -702,7 +702,6 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="askName:" destination="5bF-xP-wML" eventType="touchUpInside" id="bp7-LE-Zx6"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="NR2-U8-Pav"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="58I-HU-CdN">
