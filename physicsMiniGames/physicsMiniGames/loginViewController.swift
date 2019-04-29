@@ -22,8 +22,17 @@ class LoginViewController: UIViewController {
     var playerName: String = ""
     
     @IBAction func askName(_ sender: Any) {
-        print(nameField.text)
-        Alamofire.request("http://localhost:3000/users/").responseData { (responseData) -> Void in
+        var params: Parameters = [:]
+
+        if let username = nameField.text {
+            params["username"] = username
+        }
+
+        Alamofire.request(
+            "http://10.60.48.107:3000/users/",
+            method: .post,
+            parameters: params
+        ).responseData { responseData in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 print(swiftyJsonVar)
