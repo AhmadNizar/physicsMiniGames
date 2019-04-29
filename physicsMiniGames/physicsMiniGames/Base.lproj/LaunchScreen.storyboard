@@ -22,8 +22,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8yW-xD-qaX">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo no bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="8yW-xD-qaX">
+                                <rect key="frame" x="9" y="343" width="396" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -38,5 +38,6 @@
     </scenes>
     <resources>
         <image name="FIRST SCREEN" width="414" height="896"/>
+        <image name="logo no bg.png" width="358" height="393"/>
     </resources>
 </document>

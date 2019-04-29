@@ -1,0 +1,6 @@
+framework module Pods_physicsMiniGames {
+  umbrella header "Pods-physicsMiniGames-umbrella.h"
+
+  export *
+  module * { export * }
+}

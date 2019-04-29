@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		122BEE98227153FE0058E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEE97227153FE0058E947 /* AppDelegate.swift */; };
-		122BEE9A227153FE0058E947 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEE99227153FE0058E947 /* FirstViewController.swift */; };
 		122BEE9C227153FE0058E947 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEE9B227153FE0058E947 /* SecondViewController.swift */; };
 		122BEE9F227153FE0058E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122BEE9D227153FE0058E947 /* Main.storyboard */; };
 		122BEEA1227153FF0058E947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122BEEA0227153FF0058E947 /* Assets.xcassets */; };
 		122BEEA4227153FF0058E947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */; };
+		18C41A38F6D4160713D407EF /* Pods_physicsMiniGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455C7065A27262BBFF3EABA9 /* Pods_physicsMiniGames.framework */; };
 		1BAB63ED2271755D00FE1898 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB63EC2271755D00FE1898 /* LoginViewController.swift */; };
-		FE2B276F2272C6A2005FDB37 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2B276E2272C6A2005FDB37 /* GradientView.swift */; };
+		FE47CE022276B4B700503580 /* logo no bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FE47CE012276B4B700503580 /* logo no bg.png */; };
+		FE47CE032276EB7C00503580 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEE99227153FE0058E947 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,10 @@
 		122BEEA3227153FF0058E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		122BEEA5227153FF0058E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAB63EC2271755D00FE1898 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FE2B276E2272C6A2005FDB37 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		455C7065A27262BBFF3EABA9 /* Pods_physicsMiniGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_physicsMiniGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F788973C0509AF9310DBC47 /* Pods-physicsMiniGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-physicsMiniGames.debug.xcconfig"; path = "Target Support Files/Pods-physicsMiniGames/Pods-physicsMiniGames.debug.xcconfig"; sourceTree = "<group>"; };
+		C5840704AE5184930F1D5727 /* Pods-physicsMiniGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-physicsMiniGames.release.xcconfig"; path = "Target Support Files/Pods-physicsMiniGames/Pods-physicsMiniGames.release.xcconfig"; sourceTree = "<group>"; };
+		FE47CE012276B4B700503580 /* logo no bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo no bg.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C41A38F6D4160713D407EF /* Pods_physicsMiniGames.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				122BEE96227153FE0058E947 /* physicsMiniGames */,
 				122BEE95227153FE0058E947 /* Products */,
+				8F9C6F5FF4B1B43F25DE0A24 /* Pods */,
+				BB454806F3D6FA256B1F1FBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,14 +70,31 @@
 				122BEE97227153FE0058E947 /* AppDelegate.swift */,
 				122BEE99227153FE0058E947 /* FirstViewController.swift */,
 				122BEE9B227153FE0058E947 /* SecondViewController.swift */,
-				1BAB63EC2271755D00FE1898 /* LoginViewController.swift */,
-				FE2B276E2272C6A2005FDB37 /* GradientView.swift */,
-				122BEEA0227153FF0058E947 /* Assets.xcassets */,
 				122BEE9D227153FE0058E947 /* Main.storyboard */,
-				122BEEA5227153FF0058E947 /* Info.plist */,
+				1BAB63EC2271755D00FE1898 /* LoginViewController.swift */,
+				122BEEA0227153FF0058E947 /* Assets.xcassets */,
+				FE47CE012276B4B700503580 /* logo no bg.png */,
 				122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */,
+				122BEEA5227153FF0058E947 /* Info.plist */,
 			);
 			path = physicsMiniGames;
+			sourceTree = "<group>";
+		};
+		8F9C6F5FF4B1B43F25DE0A24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F788973C0509AF9310DBC47 /* Pods-physicsMiniGames.debug.xcconfig */,
+				C5840704AE5184930F1D5727 /* Pods-physicsMiniGames.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB454806F3D6FA256B1F1FBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				455C7065A27262BBFF3EABA9 /* Pods_physicsMiniGames.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 122BEEA8227153FF0058E947 /* Build configuration list for PBXNativeTarget "physicsMiniGames" */;
 			buildPhases = (
+				468D5055F5EC04D86397658F /* [CP] Check Pods Manifest.lock */,
 				122BEE90227153FE0058E947 /* Sources */,
 				122BEE91227153FE0058E947 /* Frameworks */,
 				122BEE92227153FE0058E947 /* Resources */,
+				BC7C678A792A5E7A2044FBAA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE47CE022276B4B700503580 /* logo no bg.png in Resources */,
 				122BEEA4227153FF0058E947 /* LaunchScreen.storyboard in Resources */,
 				122BEEA1227153FF0058E947 /* Assets.xcassets in Resources */,
 				122BEE9F227153FE0058E947 /* Main.storyboard in Resources */,
@@ -142,6 +169,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		468D5055F5EC04D86397658F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-physicsMiniGames-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7C678A792A5E7A2044FBAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-physicsMiniGames/Pods-physicsMiniGames-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-physicsMiniGames/Pods-physicsMiniGames-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		122BEE90227153FE0058E947 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,9 +225,8 @@
 			files = (
 				1BAB63ED2271755D00FE1898 /* LoginViewController.swift in Sources */,
 				122BEE9C227153FE0058E947 /* SecondViewController.swift in Sources */,
-				FE2B276F2272C6A2005FDB37 /* GradientView.swift in Sources */,
 				122BEE98227153FE0058E947 /* AppDelegate.swift in Sources */,
-				122BEE9A227153FE0058E947 /* FirstViewController.swift in Sources */,
+				FE47CE032276EB7C00503580 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,10 +370,11 @@
 		};
 		122BEEA9227153FF0058E947 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F788973C0509AF9310DBC47 /* Pods-physicsMiniGames.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GHLH52F3W;
+				DEVELOPMENT_TEAM = 4XGH7Q8LMZ;
 				INFOPLIST_FILE = physicsMiniGames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,10 +389,11 @@
 		};
 		122BEEAA227153FF0058E947 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5840704AE5184930F1D5727 /* Pods-physicsMiniGames.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GHLH52F3W;
+				DEVELOPMENT_TEAM = 4XGH7Q8LMZ;
 				INFOPLIST_FILE = physicsMiniGames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

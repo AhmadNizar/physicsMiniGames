@@ -37,73 +37,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rkm-fo-Mlp">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c99-iB-b1Q">
-                                                <rect key="frame" x="37" y="63" width="339" height="80"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                                </accessibility>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                                <state key="normal" title="Force">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="subjectsButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="JTD-gE-6Z0"/>
-                                                    <segue destination="6vx-nw-BOi" kind="show" id="XWU-o6-62c"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama Pelajaran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-wo-jcN">
-                                                <rect key="frame" x="37" y="151" width="143" height="24"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvo-x7-0lD">
-                                                <rect key="frame" x="37" y="174" width="339" height="37"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1L0-c3-Nrw">
                                                 <rect key="frame" x="38" y="213" width="336" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVX-Rs-OV2">
-                                                <rect key="frame" x="37" y="264" width="339" height="80"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                                </accessibility>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                                <state key="normal" title="Temperature">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="subjectsButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="97E-nK-xLS"/>
-                                                    <segue destination="HYM-yu-Z4I" kind="show" id="bVH-0d-x6A"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama Pelajaran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4r4-Mn-2i8">
-                                                <rect key="frame" x="38" y="352" width="143" height="24"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh2-eS-MRm">
-                                                <rect key="frame" x="38" y="384" width="339" height="38"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WPp-yk-ZPn">
                                                 <rect key="frame" x="38" y="422" width="339" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,7 +80,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fr-I0-UDP">
                                                 <rect key="frame" x="37" y="580" width="339" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -184,7 +122,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zS4-br-URp">
                                                 <rect key="frame" x="38" y="766" width="336" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -225,8 +163,7 @@
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="headerBox" destination="DbL-JV-efa" id="FAQ-Cc-FXY"/>
-                        <outletCollection property="subjectsButtonCollection" destination="c99-iB-b1Q" collectionClass="NSMutableArray" id="aFw-Un-6cm"/>
-                        <outletCollection property="subjectsButtonCollection" destination="fVX-Rs-OV2" collectionClass="NSMutableArray" id="FnU-er-9Bl"/>
+                        <outlet property="nameField" destination="dtS-Iu-DMz" id="ibf-y1-a5P"/>
                         <outletCollection property="subjectsButtonCollection" destination="JNY-og-MQc" collectionClass="NSMutableArray" id="vcs-3d-AHp"/>
                         <outletCollection property="subjectsButtonCollection" destination="zkf-Xy-Ag9" collectionClass="NSMutableArray" id="x5v-4a-xSA"/>
                     </connections>
@@ -778,7 +715,7 @@
         <scene sceneID="eSb-eF-uPq">
             <objects>
                 <viewController id="5bF-xP-wML" customClass="LoginViewController" customModule="physicsMiniGames" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HYd-gM-D6q">
+                    <view key="view" contentMode="scaleToFill" id="HYd-gM-D6q" userLabel="ErrorLbl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -793,7 +730,7 @@
                                 </state>
                                 <connections>
                                     <action selector="askName:" destination="5bF-xP-wML" eventType="touchUpInside" id="bp7-LE-Zx6"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" identifier="loginSubmitButton" id="NR2-U8-Pav"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="klq-7E-lLT"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="58I-HU-CdN">
@@ -803,25 +740,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Err" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgj-Oz-FN8">
-                                <rect key="frame" x="79" y="405" width="256" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hiz-WD-PDW"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
-                                <color key="value" red="0.57647058823529407" green="0.90196078431372551" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
-                                <color key="value" red="0.35294117650000001" green="0.56470588239999997" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="nameField" destination="58I-HU-CdN" id="4sZ-4y-AuQ"/>
