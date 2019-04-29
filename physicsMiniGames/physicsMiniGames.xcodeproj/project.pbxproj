@@ -8,16 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		122BEE98227153FE0058E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEE97227153FE0058E947 /* AppDelegate.swift */; };
-		122BEE9A227153FE0058E947 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEE99227153FE0058E947 /* FirstViewController.swift */; };
 		122BEE9C227153FE0058E947 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEE9B227153FE0058E947 /* SecondViewController.swift */; };
 		122BEE9F227153FE0058E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122BEE9D227153FE0058E947 /* Main.storyboard */; };
 		122BEEA1227153FF0058E947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122BEEA0227153FF0058E947 /* Assets.xcassets */; };
 		122BEEA4227153FF0058E947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */; };
 		18C41A38F6D4160713D407EF /* Pods_physicsMiniGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455C7065A27262BBFF3EABA9 /* Pods_physicsMiniGames.framework */; };
 		1BAB63ED2271755D00FE1898 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB63EC2271755D00FE1898 /* LoginViewController.swift */; };
-		29705FBE227708D900571AE5 /* GameScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29705FBD227708D900571AE5 /* GameScoreViewController.swift */; };
-		29B817772276AC8300EAB5E6 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B817762276AC8300EAB5E6 /* IntroViewController.swift */; };
-		29B8177A2276B98800EAB5E6 /* ThermoGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B817792276B98800EAB5E6 /* ThermoGameController.swift */; };
+		FE47CE022276B4B700503580 /* logo no bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FE47CE012276B4B700503580 /* logo no bg.png */; };
+		FE47CE032276EB7C00503580 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEE99227153FE0058E947 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +34,7 @@
 		455C7065A27262BBFF3EABA9 /* Pods_physicsMiniGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_physicsMiniGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F788973C0509AF9310DBC47 /* Pods-physicsMiniGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-physicsMiniGames.debug.xcconfig"; path = "Target Support Files/Pods-physicsMiniGames/Pods-physicsMiniGames.debug.xcconfig"; sourceTree = "<group>"; };
 		C5840704AE5184930F1D5727 /* Pods-physicsMiniGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-physicsMiniGames.release.xcconfig"; path = "Target Support Files/Pods-physicsMiniGames/Pods-physicsMiniGames.release.xcconfig"; sourceTree = "<group>"; };
+		FE47CE012276B4B700503580 /* logo no bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo no bg.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +77,7 @@
 				122BEE9D227153FE0058E947 /* Main.storyboard */,
 				1BAB63EC2271755D00FE1898 /* LoginViewController.swift */,
 				122BEEA0227153FF0058E947 /* Assets.xcassets */,
+				FE47CE012276B4B700503580 /* logo no bg.png */,
 				122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */,
 				122BEEA5227153FF0058E947 /* Info.plist */,
 				29B817762276AC8300EAB5E6 /* IntroViewController.swift */,
@@ -174,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE47CE022276B4B700503580 /* logo no bg.png in Resources */,
 				122BEEA4227153FF0058E947 /* LaunchScreen.storyboard in Resources */,
 				122BEEA1227153FF0058E947 /* Assets.xcassets in Resources */,
 				122BEE9F227153FE0058E947 /* Main.storyboard in Resources */,
@@ -248,7 +249,7 @@
 				1BAB63ED2271755D00FE1898 /* LoginViewController.swift in Sources */,
 				122BEE9C227153FE0058E947 /* SecondViewController.swift in Sources */,
 				122BEE98227153FE0058E947 /* AppDelegate.swift in Sources */,
-				122BEE9A227153FE0058E947 /* FirstViewController.swift in Sources */,
+				FE47CE032276EB7C00503580 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
