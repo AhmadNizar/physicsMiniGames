@@ -15,6 +15,10 @@ class FirstViewController: UIViewController{
     var globalY: Int = 170
     @IBOutlet var subjectsButtonCollection: [UIView] = []
     @IBOutlet weak var headerBox: UIView!
+    
+    var data: Dictionary<Int, JSON> = [:]
+    var activeTag: Int = 0
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +30,21 @@ class FirstViewController: UIViewController{
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 print("---------------------------\n",swiftyJsonVar,"--------------------------\n")
                 
-                for data in swiftyJsonVar{
-                    print("================================\n",data.1["title"])
-                    self.makeButton(name: data.1["title"])
                 
-                self.makeTitleLabel(name: data.1["title"])
+                var tag = 0
+                for data in swiftyJsonVar.makeIterator() {
+                    tag += 1
+                    print("================================\n",data.1["title"])
+                    self.makeButton(name: data.1["title"], tag: tag)
+                
+                    self.makeTitleLabel(name: data.1["title"])
                     self.makeDescriptionLabel(name: data.1["description"])
+                    
+                    self.data[tag] = data.1
                  
                 }
+                
+                print(self.data)
             }
         }
 
@@ -53,17 +64,18 @@ class FirstViewController: UIViewController{
 
     }
 
-    func makeButton(name: JSON){
+    func makeButton(name: JSON, tag: Int){
         
         let btn: UIButton = UIButton(frame: CGRect(x: 37, y: globalY, width: 338, height: 80))
         btn.backgroundColor = UIColor.blue
         btn.setTitle(name.stringValue, for: .normal)
         btn.layer.cornerRadius = 5
         btn.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        btn.tag = 1
+        btn.tag = tag
         self.view.addSubview(btn)
         
     }
+    
     func makeTitleLabel(name: JSON){
         globalY+=87
         let titleLabel: UILabel = UILabel(frame: CGRect(x: 37, y: globalY, width:150 , height: 24))
@@ -76,6 +88,7 @@ class FirstViewController: UIViewController{
         self.view.addSubview(titleLabel)
         
     }
+    
     func makeDescriptionLabel(name: JSON){
         globalY+=28
         let descLabel: UILabel = UILabel(frame: CGRect(x: 37, y: globalY, width:339 , height: 24))
@@ -88,17 +101,20 @@ class FirstViewController: UIViewController{
         self.view.addSubview(descLabel)
         globalY+=70
     }
+    
     @objc func buttonAction(sender: UIButton!) {
-        let btnsendtag: UIButton = sender
-        if btnsendtag.tag == 1 {
-            
-            dismiss(animated: true, completion: nil)
+        self.activeTag = sender.tag
+        performSegue(withIdentifier: "HomeToGame", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeToGame" {
+            let introGameController = segue.destination as! GameIntroViewController
+            let data = self.data[self.activeTag]
+        
+            introGameController.gameData = data!
         }
     }
-//    @IBAction func subjectsButton(_ sender: UIButton) {
-//
-//        print("\(String(describing: sender.titleLabel!.text))")
-//    }
     
 }
 
