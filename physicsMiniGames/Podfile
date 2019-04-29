@@ -8,5 +8,7 @@ target 'physicsMiniGames' do
   # Pods for physicsMiniGames
   pod 'Alamofire'
   pod 'SwiftyJSON'
-  pod "YoutubePlayer-in-WKWebView", "~> 0.3.0"
+  pod 'YoutubePlayer-in-WKWebView', '~> 0.3.0'
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
 end

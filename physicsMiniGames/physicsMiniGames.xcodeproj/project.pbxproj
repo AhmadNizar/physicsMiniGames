@@ -15,7 +15,9 @@
 		122BEEA4227153FF0058E947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */; };
 		18C41A38F6D4160713D407EF /* Pods_physicsMiniGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455C7065A27262BBFF3EABA9 /* Pods_physicsMiniGames.framework */; };
 		1BAB63ED2271755D00FE1898 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB63EC2271755D00FE1898 /* LoginViewController.swift */; };
+		29705FBE227708D900571AE5 /* GameScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29705FBD227708D900571AE5 /* GameScoreViewController.swift */; };
 		29B817772276AC8300EAB5E6 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B817762276AC8300EAB5E6 /* IntroViewController.swift */; };
+		29B8177A2276B98800EAB5E6 /* ThermoGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B817792276B98800EAB5E6 /* ThermoGameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +30,9 @@
 		122BEEA3227153FF0058E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		122BEEA5227153FF0058E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAB63EC2271755D00FE1898 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		29705FBD227708D900571AE5 /* GameScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreViewController.swift; sourceTree = "<group>"; };
 		29B817762276AC8300EAB5E6 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		29B817792276B98800EAB5E6 /* ThermoGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermoGameController.swift; sourceTree = "<group>"; };
 		455C7065A27262BBFF3EABA9 /* Pods_physicsMiniGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_physicsMiniGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F788973C0509AF9310DBC47 /* Pods-physicsMiniGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-physicsMiniGames.debug.xcconfig"; path = "Target Support Files/Pods-physicsMiniGames/Pods-physicsMiniGames.debug.xcconfig"; sourceTree = "<group>"; };
 		C5840704AE5184930F1D5727 /* Pods-physicsMiniGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-physicsMiniGames.release.xcconfig"; path = "Target Support Files/Pods-physicsMiniGames/Pods-physicsMiniGames.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 		122BEE96227153FE0058E947 /* physicsMiniGames */ = {
 			isa = PBXGroup;
 			children = (
+				29B817782276B96600EAB5E6 /* Games */,
 				122BEE97227153FE0058E947 /* AppDelegate.swift */,
 				122BEE99227153FE0058E947 /* FirstViewController.swift */,
 				122BEE9B227153FE0058E947 /* SecondViewController.swift */,
@@ -76,8 +81,17 @@
 				122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */,
 				122BEEA5227153FF0058E947 /* Info.plist */,
 				29B817762276AC8300EAB5E6 /* IntroViewController.swift */,
+				29705FBD227708D900571AE5 /* GameScoreViewController.swift */,
 			);
 			path = physicsMiniGames;
+			sourceTree = "<group>";
+		};
+		29B817782276B96600EAB5E6 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				29B817792276B98800EAB5E6 /* ThermoGameController.swift */,
+			);
+			path = Games;
 			sourceTree = "<group>";
 		};
 		8F9C6F5FF4B1B43F25DE0A24 /* Pods */ = {
@@ -201,6 +215,8 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-physicsMiniGames/Pods-physicsMiniGames-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YoutubePlayer-in-WKWebView/YoutubePlayer_in_WKWebView.framework",
 			);
@@ -209,6 +225,8 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YoutubePlayer_in_WKWebView.framework",
 			);
@@ -224,7 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B8177A2276B98800EAB5E6 /* ThermoGameController.swift in Sources */,
 				29B817772276AC8300EAB5E6 /* IntroViewController.swift in Sources */,
+				29705FBE227708D900571AE5 /* GameScoreViewController.swift in Sources */,
 				1BAB63ED2271755D00FE1898 /* LoginViewController.swift in Sources */,
 				122BEE9C227153FE0058E947 /* SecondViewController.swift in Sources */,
 				122BEE98227153FE0058E947 /* AppDelegate.swift in Sources */,
