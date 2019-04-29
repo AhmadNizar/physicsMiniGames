@@ -64,11 +64,11 @@
 				122BEE99227153FE0058E947 /* FirstViewController.swift */,
 				122BEE9B227153FE0058E947 /* SecondViewController.swift */,
 				1BAB63EC2271755D00FE1898 /* LoginViewController.swift */,
-				122BEE9D227153FE0058E947 /* Main.storyboard */,
+				FE2B276E2272C6A2005FDB37 /* GradientView.swift */,
 				122BEEA0227153FF0058E947 /* Assets.xcassets */,
+				122BEE9D227153FE0058E947 /* Main.storyboard */,
 				122BEEA5227153FF0058E947 /* Info.plist */,
 				122BEEA2227153FF0058E947 /* LaunchScreen.storyboard */,
-				FE2B276E2272C6A2005FDB37 /* GradientView.swift */,
 			);
 			path = physicsMiniGames;
 			sourceTree = "<group>";

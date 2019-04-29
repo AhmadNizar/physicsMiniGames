@@ -8,14 +8,23 @@
 
 import UIKit
 
+@IBDesignable
 class LoginViewController: UIViewController {
+
+    @IBOutlet weak var submitButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    backgroundGradientColor()
         
+     submitButton.layer.cornerRadius = 5
+       submitButton.layer.borderWidth = 1
+        nameField.layer.borderWidth = 1
+        nameField.layer.cornerRadius = 5
         
         // Do any additional setup after loading the view.
+
     }
     
     @IBOutlet weak var nameField: UITextField!
@@ -23,12 +32,22 @@ class LoginViewController: UIViewController {
     
     @IBAction func askName(_ sender: Any) {
         if (nameField.text == "") {
-            
         } else {
 //            playerName = nameField.text
         }
     }
     
+    func backgroundGradientColor(){
+        let newlayer = CAGradientLayer()
+        newlayer.frame = view.bounds
+        newlayer.colors = [UIColor(red: 0.58, green: 0.90, blue: 0.99, alpha: 1.0).cgColor, UIColor(red: 0.41, green: 0.74, blue: 1.0, alpha: 1.0).cgColor]
+        
+        newlayer.frame = view.frame
+        view.layer.insertSublayer(newlayer, at: 0)
+        newlayer.startPoint = CGPoint(x:0,y:0)
+        newlayer.endPoint = CGPoint(x:1,y:1)
+    }
+
 
     /*
     // MARK: - Navigation
