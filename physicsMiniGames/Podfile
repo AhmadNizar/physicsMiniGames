@@ -6,8 +6,9 @@ target 'physicsMiniGames' do
   use_frameworks!
 
   # Pods for physicsMiniGames
-
-    pod 'Alamofire'
-    pod 'SwiftyJSON'
-
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'YoutubePlayer-in-WKWebView', '~> 0.3.0'
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
 end
