@@ -10,26 +10,40 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+@IBDesignable
 class LoginViewController: UIViewController {
+
+    @IBOutlet weak var submitButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+    backgroundGradientColor()
+        
+     submitButton.layer.cornerRadius = 5
+       submitButton.layer.borderWidth = 1
+        nameField.layer.borderWidth = 1
+        nameField.layer.cornerRadius = 5
+        
 
-        // Do any additional setup after loading the view.
+
     }
 
     @IBOutlet weak var nameField: UITextField!
+    
     var playerName: String = ""
     
     @IBAction func askName(_ sender: Any) {
+        
+        
         var params: Parameters = [:]
-
+        
         if let username = nameField.text {
             params["username"] = username
         }
 
         Alamofire.request(
-            "http://10.60.48.107:3000/users/",
+            "http://10.60.48.159:3000/users/",
             method: .post,
             parameters: params
         ).responseData { responseData in
@@ -38,9 +52,22 @@ class LoginViewController: UIViewController {
                 print(swiftyJsonVar)
             }
         }
+    
+    }
+    
+    func backgroundGradientColor(){
+        let newlayer = CAGradientLayer()
+        newlayer.frame = view.bounds
+        newlayer.colors = [UIColor(red: 0.58, green: 0.90, blue: 0.99, alpha: 1.0).cgColor, UIColor(red: 0.41, green: 0.74, blue: 1.0, alpha: 1.0).cgColor]
+        
+        newlayer.frame = view.frame
+        view.layer.insertSublayer(newlayer, at: 0)
+        newlayer.startPoint = CGPoint(x:0,y:0)
+        newlayer.endPoint = CGPoint(x:1,y:1)
     }
     
 
+    
     /*
     // MARK: - Navigation
 
